@@ -1,0 +1,634 @@
+<html>
+   <head>
+      <title>BBdaily</title>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sans-serif">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Brush Script MT, cursive">
+      <style>
+         #navbar{
+            width:100%;
+            height:150px;
+            background-color:white;
+            position:fixed;
+            top:0px;
+            left:0px;
+            z-index:1;
+         }
+         .navbar1{
+            width:120px;
+            height:80px;
+            position:fixed;
+            top:35px;
+            left:50px;
+         }
+         .navbar2{
+            float:right;
+            list-style-type:none;
+            margin:0px;
+            padding:0px;
+            position:fixed;
+            left:35%;
+            top:50px;
+         }
+         #navlist{
+            display:inline-block;
+            padding:10px;
+         }
+         #navbar2{
+            text-decoration:none;
+            color:black;
+            font-family:Sans-serif;
+         }
+         #navbar2:hover{
+            color:yellowgreen;
+         }
+         #section{
+            width:100%;
+            height:550px;
+            background-color:white;
+            position:absolute;
+            left:0px;
+            top:150px;
+            text-align:center;
+            z-index:-1;
+         }
+         #line1{
+            position:relative;
+            font-family:Sans-serif;
+            font-size:18px;
+            margin-top:140px;
+         }
+         #red{
+            color:red;
+         }
+         #line2{
+            font-family:cursive;
+            font-size:42px;
+         }
+         #line3, #line4{
+            font-family:Sans-serif;
+            font-size:16px;
+         }
+         #download{
+            width:30%;
+            height:60px;
+            position:relative;
+            left:35%;
+         }
+         #phone{
+            width:33%;
+            height:50px;
+            background-color:black;
+            float:left;
+            margin:2%;
+            border-radius:7px;
+            text-align:left;
+            font-family:Sans-serif;
+         }
+         .phone{
+            width:30px;
+            height:30px;
+            position:relative;
+            top:10px;
+            left:5px;
+         }
+         #android{
+            text-decoration:none;
+            color:white;
+            font-size:8px;
+            float:right;
+            position:relative;
+            top:10px;
+            right:38px;
+            font-family:Sans-serif;
+            font-weight:normal;
+         }
+         .android{
+            text-decoration:none;
+            color:white;
+            float:right;
+            position:relative;
+            right:8px;
+            top:-10px;
+            font-size:16px;
+            font-weight:normal;
+         }
+         #iphone{
+            text-decoration:none;
+            color:white;
+            font-size:10px;
+            float:right;
+            position:relative;
+            top:10px;
+            right:16px;
+            font-family:Sans-serif;
+            font-weight:normal;
+         }
+         .iphone{
+            text-decoration:none;
+            color:white;
+            float:right;
+            position:relative;
+            right:15px;
+            top:-10px;
+            font-size:18px;
+            font-weight:normal;
+         }
+         #offer{
+            width:100px;
+            height:150px;
+            position:fixed;
+            top:300px;
+            left:0px;
+            float:top;
+         }
+         .offer1{
+            width:100px;
+            height:100px;
+         }
+         .offer2{
+            width:100px;
+            height:40px;
+            margin-top:10px;
+         }
+         #bgimg{
+            width:1500px;
+            height:550px;
+            position:absolute;
+            left:0px;
+            top:-100px;
+            z-index:-1;
+         }
+         #section2{
+            width:80%;
+            height:400px;
+            position:absolute;
+            left:10%;
+            top:710px;
+            text-align:center;
+            z-index:-1;
+         }
+         .heading{
+            font-size:20px;
+            font-family:Sans-serif;
+         }
+         .hr{
+            width:10%;
+            height:2px;
+            background-color:yellowgreen;
+            border-style:solid;
+            border-size:1px;
+            border-color:yellowgreen;
+            border-radius:2px;
+         }
+         #steps{
+            width:200px;
+            height:350px;
+            padding:10px;
+         }
+         #section3{
+            width:80%;
+            height:350px;
+            position:absolute;
+            top:1150px;
+            left:10%;
+            text-align:center;
+            z-index:-1;
+         }
+         .why{
+            font-family:Sans-serif;
+            font-size:20px;
+            
+         }
+         #why{
+            font-weight:normal;
+         }
+         .div1{
+            width:130px;
+            height:200px;
+            float:left;
+            margin-left:22px;
+            text-align:center;
+         }
+         #div1img{
+            width:90px;
+            height:90px;
+            margin-top:10px;
+            margin-left: 200px;
+         }
+         #small{
+            font-weight:normal;
+            font-family:Sans-serif;
+            position:relative;
+            top:15px;
+            font-size:12px;
+           left: 180px;
+         }
+         #big{
+            font-size:15px;
+            
+         }
+         #bgimg2{
+            width:100%;
+            height:350px;
+            position:absolute;
+            top:0px;
+            left:0px;
+            z-index:-1;
+         }
+         #article1{
+            width:80%;
+            height:450px;
+            position:absolute;
+            top:1550;
+            left:10%;
+            text-align:center;
+            z-index:-1;
+         }
+         #range{
+            font-family:Sans-serif;
+            font-weight:normal;
+            font-size:20px;
+         }
+         #table{
+            width:100%;
+            height:340px;
+         }
+         .data{
+            width:120px;
+            height:150px;
+            text-align:center;
+         }
+         .tableimg{
+            width:150px;
+            height:100px;
+         }
+         .products{
+            font-weight:normal;
+            font-size:10px;
+         }
+         #article2{
+            width:100%;
+            height:350px;
+            background-color:yellowgreen;
+            position:absolute;
+            left:0px;
+            top:2050px;
+            z-index:-1;
+            text-align:center;
+         }
+         #guarantee1{
+            font-weight:normal;
+            font-family:Sans-serif;
+            font-size:20px;
+         }
+         #guaranteehr{
+            width:10%;
+            height:2px;
+            background-color:white;
+            border-style:solid;
+            border-size:1px;
+            border-color:white;
+            border-radius:2px;
+         }
+         .guaranteediv1{
+            width:20%;
+            height:240px;
+            float:left;
+            position:absolute;
+            left:20%;
+         }
+         .guaranteediv2{
+            width:26%;
+            height:240px;
+            float:left;
+            position:absolute;
+            left:57%;
+         }
+         .guarantee1{
+            width:60%;
+            height:150px;
+         }
+         .guarantee3{
+            width:60%;
+            height:150px;
+         }
+         .guarantee2{
+            font-weight:normal;
+            font-family:Sans-serif;
+         }
+         #footer{
+            width:100%;
+            height:400px;
+            background-color:black;
+            position:absolute;
+            left:0px;
+            top:2450px;
+            color:white;
+            opacity:0.8;
+         }
+         #fdiv1{
+            width:250px;
+            height:350px;
+            text-align:left;
+            position:absolute;
+            margin-left:250px;
+            margin-top: 50px;
+            font-family:Sans-serif;
+         }
+         #fdiv2{
+            width:250px;
+            height:350px;
+            text-align:left;
+            position:absolute;
+            margin-left:550px;
+            margin-top: 50px;
+            font-family:Sans-serif;
+            float:left;
+            }
+         #fdiv3{
+            width:250px;
+            height:350px;
+            position:absolute;
+            margin-left:850px;
+            margin-top: 50px;
+            font-family:Sans-serif;
+         }
+         #phone1{
+            width:33%;
+            height:50px;
+            background-color:black;
+            float:left;
+            margin:2%;
+            margin-left:650px;
+            margin-top: 50px;
+            border-radius:7px;
+            text-align:left;
+            font-family:Sans-serif;
+         }
+         .tfd3{
+            padding-left:10px;
+         }
+         #tfd3{
+            color:white;
+         }
+      </style>
+   </head>
+   <body>
+      <nav id="navbar">
+         <img src="Media/logo (1).png" class="navbar1">
+         <ul class="navbar2">
+            <li id="navlist"><a href="#" id="navbar2">Home</a></li>
+            <li id="navlist"><a href="#section2" id="navbar2">How it works</a></li>
+            <li id="navlist"><a href="#section3" id="navbar2">Why bbdaily</a></li>
+            <li id="navlist"><a href="#article1" id="navbar2">Range</a></li>
+            <li id="navlist"><a href="#article2" id="navbar2">Guarantees</a></li>
+            <li id="navlist"><a href="#" id="navbar2">Contact us</a></li>
+         </ul>
+      </nav>
+      <section id="section" class="banner">
+            <p id="line1"><b id="red">Big</b>basket introduces bbdaily</p>
+            <b id="line2">Start fresh everyday</b><br>
+            <p id="line3">Fresh milk & groceries home delivered</p>
+            <p id="line4">Your online milk delivery app. Download now.</p>
+            <div id="download">
+               <a href="#">
+               <div id="phone">
+                  <img src="Media/IMG_20220819_184203.jpg" class="phone">
+                  <b id="android">android app on</b><br>
+                  <b class="android">Google play</b>
+               </div>
+               </a>
+               <a href="#">
+               <div id="phone">
+                  <img src="Media/IMG_20220819_184229.jpg" class="phone">
+                  <b id="iphone">Download on the</b><br>
+                  <b class="iphone">App store</b>
+               </div>
+               </a>
+            </div>
+            <div id="offer">
+               <img src="Media/bbdaily_buttons_fresho.png" class="offer1">
+               <img src="Media/bbdaily_buttons_offers.png" class="offer2">
+            </div>
+            <img src="Media/banner.png" id="bgimg">
+      </section>
+      <section id="section2">
+         <br><br>
+         <b class="heading">How it works</b><br>
+         <hr class="hr">
+         <img src="Media/Step 1.jpg" id="steps">
+         <img src="Media/Step 2.jpg" id="steps">
+         <img src="Media/Step 3.jpg" id="steps">
+         <img src="Media/Step 4.jpg" id="steps">
+         <img src="Media/Step 5.jpg" id="steps">
+      </section>
+      <section id="section3">
+         <br><br>
+         <b class="why">Why <b id="why">use bbdaily ?</b></b>
+         <hr class="hr">
+         <br>
+         
+         <div class="div1">
+            <img src="Media/Right clicked.png" id="div1img">
+            <b id="small"><b id="big">Freshness</b><br>You can trust</b>
+         </div>
+         <div class="div1">
+            <img src="Media/Hand.png" id="div1img">
+            <b id="small"><b id="big">Reliability</b><br>Daily delivery<br>Before 7.00 AM</b>
+         </div>
+         <div class="div1">
+            <img src="Media/Rupee.png" id="div1img">
+            <b id="small"><b id="big">Convenience</b><br>Easy to use<br>(Subscribe-pause &<br>resume anytime)</b>
+         </div>
+         <div class="div1">
+            <img src="Media/Clock.png" id="div1img">
+            <b id="small"><b id="big">Choice</b><br>Wide range of milk + ither<br>daily essetials</b>
+         </div>
+         <div class="div1">
+            <img src="Media/Drop.jpg" id="div1img">
+            <b id="small"><b id="big"><br>No minimum<br>order</b></b>
+         </div>
+         <img src="Media/Milk.jpeg" id="bgimg2">
+      </section>
+      <article id="article1">
+         <br><br>
+         <b id="range">Explore our <b class="range">Range </b>of products</b>
+         <hr class="hr">
+         <table id="table">
+            <tbody>
+               <tr class="row">
+               
+                  <td class="data">
+                     <img src="Media/Milk.jpg" class="tableimg"><br><br>
+                     <b class="products">Fresh Milk</b>
+                  </td>
+                  
+                  <td class="data">
+                     <img src="Media/Vegetables.jpg" class="tableimg"><br><br>
+                     <b class="products">Vegetables</b>
+                  </td>
+                  
+                  <td class="data">
+                     <img src="Media/Fruits.jpg" class="tableimg"><br><br>
+                     <b class="products">Fruits</b>
+                  </td>
+                  
+                  <td class="data">
+                     <img src="Media/Bakery.jpg" class="tableimg"><br><br>
+                     <b class="products">Bakery, Dairy &<br>Eggs</b>
+                  </td>
+                  
+                  <td class="data">
+                     <img src="Media/Beverages.jpg" class="tableimg"><br><br>
+                     <b class="products">Beverages</b>
+                  </td>
+                  
+                  <td class="data">
+                     <img src="Media/Breakfast.jpg" class="tableimg"><br><br>
+                     <b class="products">Breakfast &<br>Snacks</b>
+                  </td>
+                  
+               </tr>
+               <tr class="row">
+                  
+                  <td class="data">
+                     <img src="Media/Foodgrains.jpg" class="tableimg"><br><br>
+                     <b class="products">Foodgrains, Oils<br>& Masalas</b>
+                  </td>
+                  
+                  <td class="data">
+                     <img src="Media/Pooja.jpg" class="tableimg"><br><br>
+                     <b class="products">Pooja Essentials</b>
+                  </td>
+                  
+                  <td class="data">
+                     <img src="Media/Baby.jpg" class="tableimg"><br><br>
+                     <b class="products">Baby Care</b>
+                  </td>
+                  
+                  <td class="data">
+                     <img src="Media/Beauty.jpg" class="tableimg"><br><br>
+                     <b class="products">Beauty &<br>Hygiene</b>
+                  </td>
+                  
+                  <td class="data">
+                     <img src="Media/Cleaning.jpg" class="tableimg"><br><br>
+                     <b class="products">Cleaning &<br>Household</b>
+                  </td>
+                  
+                  <td class="data">
+                     <img src="Media/Pet.jpg" class="tableimg"><br><br>
+                     <b class="products">Pet Care</b>
+                  </td>
+                  
+               </tr>
+            </tbody>
+         </table>
+      </article>
+      <article id="article2">
+         <br><br>
+         <b id="guarantee1">We <b>Guarantee</b> you</b>
+         <hr id="guaranteehr">
+         <br>
+         <div class="guaranteediv1">
+            <img src="Media/Green clock.jpg" class="guarantee1"><br>
+            <b class="guarantee2">On-time every<br>time guranteed</b>
+         </div>
+         <div class="guaranteediv2">
+            <img src="Media/Green bottle.jpg" class="guarantee3"><br>
+            <b class="guarantee2">Freshness you can trust<br>(100% safe & unadulterated milk)</b>
+         </div>
+      </article>
+      <footer id="footer">
+         <div id="fdiv1">
+            <br><br>
+            <b>Contact us</b>
+            <br><br>
+            bbdailysupport@bigbasket.com<br>
+            080-43133133
+         </div>
+         <div id="fdiv2">
+            <br><br>
+            FAQ<br>
+            New fo offer<br>
+            Daily Ninja FAQ<br>
+            Offers & T&C<br>
+            Privacy Policy<br>
+            Contactless Delivery<br>
+            bbdaily Meal Kit<br>
+            Gourmet Store<br>
+            Terms & Conditions<br>
+            Subscription Offers (New Users)<br>
+            bbdaily Box
+         </div>
+         <div id="fdiv3">
+            <br>
+            <b>Cities we serve</b>
+            <br><br>
+            <table id="tfd3">
+               <tbody>
+                  <tr>
+                     <td>Ahmedabad</td>
+                     <td class="tfd3">Kochi</td>
+                  </tr>
+                  <tr>
+                     <td>Bangalore</td>
+                     <td class="tfd3">Kolkata</td>
+                  </tr>
+                  <tr>
+                     <td>Chandigarh</td>
+                     <td class="tfd3">Lucknow</td>
+                  </tr>
+                  <tr>
+                     <td>Chennai</td>
+                     <td class="tfd3">Mumbai</td>
+                  </tr>
+                  <tr>
+                     <td>Delhi</td>
+                     <td class="tfd3">Noida</td>
+                  </tr>
+                  <tr>
+                     <td>Guntur</td>
+                     <td class="tfd3">Patna</td>
+                  </tr>
+                  <tr>
+                     <td>Gurgaon</td>
+                     <td class="tfd3">Pune</td>
+                  </tr>
+                  <tr>
+                     <td>Hyderabad</td>
+                     <td class="tfd3">Tricity</td>
+                  </tr>
+                  <tr>
+                     <td>Indore</td>
+                     <td class="tfd3">Vijaywada</td>
+                  </tr>
+                  <tr>
+                     <td>Kanpur</td>
+                     <td class="tfd3">Vishakhapatnam</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div id="download">
+            <a href="#">
+            <div id="phone1">
+               <img src="Media/IMG_20220819_184203.jpg" class="phone">
+               <b id="android">android app on</b><br>
+               <b class="android">Google play</b>
+            </div>
+            </a>
+            <a href="#">
+            <div id="phone1">
+               <img src="Media/IMG_20220819_184229.jpg" class="phone">
+               <b id="iphone">Download on the</b><br>
+               <b class="iphone">App store</b>
+            </div>
+            </a>
+         </div>
+         <div>
+         
+         </div>
+      </footer>
+   </body>
+</html>
